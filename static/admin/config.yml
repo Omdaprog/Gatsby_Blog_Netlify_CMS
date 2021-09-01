@@ -22,6 +22,22 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: "Image", name: "thumbnail", widget: "image"}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'press'
+    label: 'Press'
+    folder: 'content/press'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: "Image", name: "thumbnail", widget: "image"}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
       
