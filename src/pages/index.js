@@ -47,6 +47,7 @@ const BlogIndex = ({ data, location }) => {
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
+                  <img src={post.frontmatter.thumbnail} alt="" />
                   <p
                     onClick={() => console.log(post.fields.slug) }
                     dangerouslySetInnerHTML={{
@@ -54,12 +55,7 @@ const BlogIndex = ({ data, location }) => {
                     }}
                     itemProp="description"
                   />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.descriptiontwo || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
+                  
                 </section>
               </article>
             </li>
@@ -89,7 +85,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          descriptiontwo
+          thumbnail
         }
       }
     }
