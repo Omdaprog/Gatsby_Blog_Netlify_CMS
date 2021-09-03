@@ -128,6 +128,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `5888764152`,
+        access_token:`IGQVJWSTgxbkdYYTZAySUVxV0tLdFlfXzd4aDJSQ0ZAvV3hlNl94cTBkWFJQdTUyVXY4UGRfSUdoVkNDbWM4ekNIUk1zVVNWejVac0FYRk1pXzZANc1JHRS1sbHFMTzQ3WHcxZA0NLdFh4WnBEMmpaZADhOMAZDZD`,
+        instagram_id: `182329422427067`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-netlify-cms`
